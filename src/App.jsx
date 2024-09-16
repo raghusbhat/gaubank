@@ -7,6 +7,7 @@ import FacilitySection from "./components/FacilitySection";
 import AddressSection from "./components/AddressSection";
 import Donate from "./components/Donate";
 import Footer from "./components/Footer";
+import WhatsAppChat from "./components/WhatsAppChat"; // Import the WhatsAppChat component
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Donate />
       <AddressSection />
       <Footer />
+      <WhatsAppChat />
     </>
   );
 }

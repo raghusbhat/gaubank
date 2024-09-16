@@ -13,7 +13,7 @@ const Navbar = () => {
         {/* Logo and Text */}
         <div className="flex items-center text-white">
           <img
-            src="../../public/logo.svg"
+            src="/logo.svg"
             alt="Logo"
             className="h-8 w-8 md:h-12 md:w-12 mr-1"
           />
@@ -336,7 +336,9 @@ const Navbar = () => {
                 >
                   Contact
                 </a>
-                <p className="absolute bottom-0 text-center text-white">footer</p>
+                <p className="absolute bottom-0 text-center text-white">
+                  footer
+                </p>
               </div>
             )}
           </div>

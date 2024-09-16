@@ -35,12 +35,12 @@ const FacilitySection = () => {
           comfortable and safe environment, ensuring that all our cattle receive
           the best possible care and attention.
         </p>
-        <p>We care for the following breeds</p>
+        <p>Some of the breeds we care for</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
           <div className="bg-primaryDark p-2 m-2 rounded relative">
             <img
               className="h-full w-full object-cover hover:scale-105 transition-all ease-in-out duration-300"
-              src="../public/Deoni.webp"
+              src="./Deoni.webp"
               alt="Deoni Cattle"
             />
             <p className="absolute bottom-0 left-0 right-0 text-center font-semibold text-xs text-black bg-white/50 p-1">
@@ -50,7 +50,7 @@ const FacilitySection = () => {
           <div className="bg-primaryDark p-2 m-2 rounded relative">
             <img
               className="h-full w-full object-cover hover:scale-105 transition-all ease-in-out duration-300"
-              src="../public/Geer.webp"
+              src="./Geer.webp"
               alt="Geer Cattle"
             />
             <p className="absolute bottom-0 left-0 right-0 text-center font-semibold text-xs text-black bg-white/50 p-1">
@@ -60,7 +60,7 @@ const FacilitySection = () => {
           <div className="bg-primaryDark p-2 m-2 rounded relative">
             <img
               className="h-full w-full object-cover hover:scale-105 transition-all ease-in-out duration-300"
-              src="../public/Kankrej.webp"
+              src="./Kankrej.webp"
               alt="Kankrej Cattle"
             />
             <p className="absolute bottom-0 left-0 right-0 text-center font-semibold text-xs text-black bg-white/50 p-1">
@@ -70,7 +70,7 @@ const FacilitySection = () => {
           <div className="bg-primaryDark p-2 m-2 rounded relative">
             <img
               className="h-full w-full object-cover hover:scale-105 transition-all ease-in-out duration-300"
-              src="../public/Hallikar.webp"
+              src="./Hallikar.webp"
               alt="Hallikar Cattle"
             />
             <p className="absolute bottom-0 left-0 right-0 text-center font-semibold text-xs text-black bg-white/50 p-1">
@@ -80,7 +80,7 @@ const FacilitySection = () => {
           <div className="bg-primaryDark p-2 m-2 rounded relative">
             <img
               className="h-full w-full object-cover hover:scale-105 transition-all ease-in-out duration-300"
-              src="../public/Khillari.webp"
+              src="./Khillari.webp"
               alt="Khillari Cattle"
             />
             <p className="absolute bottom-0 left-0 right-0 text-center font-semibold text-xs text-black bg-white/50 p-1">
@@ -90,7 +90,7 @@ const FacilitySection = () => {
           <div className="bg-primaryDark p-2 m-2 rounded relative">
             <img
               className="h-full w-full object-cover hover:scale-105 transition-all ease-in-out duration-300 "
-              src="../public/malnad-gidda.webp"
+              src="./malnad-gidda.webp"
               alt="Malnad Gidda Cattle"
             />
             <p className="absolute bottom-0 left-0 right-0 text-center font-semibold text-xs text-black bg-white/50 p-1">
@@ -103,28 +103,28 @@ const FacilitySection = () => {
           <div className="p-2 m-2 rounded relative overflow-clip shadow ">
             <img
               className="h-full w-full rounded object-cover hover:scale-105 transition-all ease-in-out duration-300"
-              src="../public/facility1.webp"
+              src="./facility1.webp"
               alt="Facility Image 1"
             />
           </div>
           <div className="p-2 m-2 rounded relative overflow-clip shadow">
             <img
               className="h-full w-full rounded object-cover hover:scale-105 transition-all ease-in-out duration-300"
-              src="../public/facility2.webp"
+              src="./facility2.webp"
               alt="Facility Image 2"
             />
           </div>
           <div className="p-2 m-2 rounded relative overflow-clip shadow">
             <img
               className="h-full w-full rounded object-cover hover:scale-105 transition-all ease-in-out duration-300"
-              src="../public/facility3.webp"
+              src="./facility3.webp"
               alt="Facility Image 3"
             />
           </div>
           <div className="p-2 m-2 rounded relative overflow-clip shadow">
             <img
               className="h-full w-full rounded object-cover hover:scale-105 transition-all ease-in-out duration-300"
-              src="../public/facility4.webp"
+              src="./facility4.webp"
               alt="Facility Image 4"
             />
           </div>

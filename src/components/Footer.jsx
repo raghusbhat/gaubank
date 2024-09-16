@@ -13,13 +13,14 @@ const Footer = () => {
   return (
     <footer className="bg-primaryDark text-white pt-8 pb-2 text-center">
       <a
+        className="underline py-8"
         href={`mailto:${emailAddress}`}
         dangerouslySetInnerHTML={{ __html: email }}
       />
       <p className="text-xs">
-        © {new Date().getFullYear()} Dharma Chakra ®. All rights reserved.
+        © {new Date().getFullYear()} Dharma Chakra 111®. All rights reserved.
       </p>
-      <p className="mt-2 text-xs italic">
+      <p className="mt-2 text-xs italic opacity-60">
         Developed & Maintained by{" "}
         <a
           className="underline"
