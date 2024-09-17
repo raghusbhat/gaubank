@@ -2,7 +2,8 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section id="hero"
+    <section
+      id="hero"
       className="relative h-[70vh] md:h-[80vh] bg-cover"
       style={{ backgroundImage: 'url("./hero_img.jpg")' }}
     >
@@ -18,9 +19,9 @@ const HeroSection = () => {
           <hr className="h-px my-5 md:my-6 bg-white/10 border-0" />
           <p className="text-base md:text-lg lg:text-xl shadow rounded w-full max-w-prose">
             At Bharatiya Gou-Bank, Hosad, we are dedicated to the welfare and
-            protection of Indian cows. This one-of-a-kind initiative provides a
-            safe and nurturing home for these sacred animals. Join us in
-            ensuring their survival and celebrating our rich heritage.
+            protection of Indian indigenous cows. This one-of-a-kind initiative
+            provides a safe and nurturing home for these sacred animals. Join us
+            in ensuring their survival and celebrating our rich heritage.
           </p>
           <button
             className="group bg-primary hover:bg-primaryLight hover:text-green-950 px-6 py-2 rounded shadow m-8 font-bold flex items-center justify-center gap-1 mx-auto transition-all ease-in-out duration-300"

@@ -18,7 +18,7 @@ const Navbar = () => {
             className="h-8 w-8 md:h-12 md:w-12 mr-1"
           />
           <span className="font-semibold md:text-2xl  md:font-bold">
-            Bharatiya Gau Bank
+            Bharatiya Gou Bank
           </span>
         </div>
         <div className="hidden md:block">
@@ -257,7 +257,7 @@ const Navbar = () => {
             {/* Conditional rendering for hamburger and close icons */}
             {isOpen ? (
               <svg
-                className="w-6 h-6" // Close icon
+                className="w-6 h-6 mr-2" // Close icon
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -272,7 +272,7 @@ const Navbar = () => {
               </svg>
             ) : (
               <svg
-                className="w-6 h-6" // Hamburger icon
+                className="w-6 h-6 mr-2" // Hamburger icon
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
