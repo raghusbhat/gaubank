@@ -1,6 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section
       id="hero"
@@ -9,19 +12,17 @@ const HeroSection = () => {
     >
       <div className="flex items-center justify-center h-full bg-black bg-opacity-60">
         <div className="text-white text-center rounded-lg md:bg-white/5 m-2 md:m-4 p-2 md:px-6 md:py-10 md:backdrop-blur lg:max-w-[50vw]  md:shadow md:border md:border-white/10">
-          <h3 className="text-xl md:text-2xl">Welcome to</h3>
+          <h3 className="text-xl md:text-2xl"> {t("heroSection.welcome")} </h3>
           <h1 className="text-2xl font-bold md:text-5xl text-primary shadow-2xl mt-2">
-            Bharatiya Gou-Bank
+            {t("heroSection.name")}
           </h1>
           <h3 className="text-sm md:text-lg italic md:tracking-widest">
-            Protecting Cows, Preserving Bharathvarsha
+            {t("heroSection.subtitle")}
           </h3>
           <hr className="h-px my-5 md:my-6 bg-white/10 border-0" />
+
           <p className="text-base md:text-lg lg:text-xl shadow rounded w-full max-w-prose">
-            At Bharatiya Gou-Bank, Hosad, we are dedicated to the welfare and
-            protection of Indian indigenous cows. This one-of-a-kind initiative
-            provides a safe and nurturing home for these sacred animals. Join us
-            in ensuring their survival and celebrating our rich heritage.
+            {t("heroSection.description")}
           </p>
           <button
             className="group bg-primary hover:bg-primaryLight hover:text-green-950 px-6 py-2 rounded shadow m-8 font-bold flex items-center justify-center gap-1 mx-auto transition-all ease-in-out duration-300"
@@ -32,7 +33,7 @@ const HeroSection = () => {
               }
             }}
           >
-            Donate
+            {t("heroSection.button")}
             <svg
               className="h-4 w-4 group-hover:animate-bounce"
               viewBox="0 0 20 20"

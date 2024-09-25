@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Donate = () => {
+  const { t } = useTranslation();
   const [accountNumber, setAccountNumber] = useState("");
   const obfuscatedUPI =
     "&#56;&#50;&#55;&#55;&#53;&#52;&#50;&#51;&#53;&#56;&#64;&#107;&#98;&#108;";
@@ -50,7 +52,7 @@ const Donate = () => {
           </svg>
 
           <p className="text-lg md:text-2xl font-semibold text-center">
-            Support the Cause
+            {t("donateSection.title")}
           </p>
 
           <svg
@@ -66,19 +68,13 @@ const Donate = () => {
           </svg>
         </div>
         <p className="mb-4 md:leading-relaxed text-center">
-          The maintenance and care of these rescued cattle demand substantial
-          funds and resources for food, medicine, and other necessities. We
-          kindly request your generous donations to support this noble cause.
-          Any contribution, no matter how small or big, is greatly appreciated
-          and will earn you good karma.
+          {t("donateSection.description")}
         </p>
-        <p className="my-2">If you are on mobile, click the UPI link below</p>
+        <p className="my-2"> {t("donateSection.upi")} </p>
         <a className="font-bold underline text-primary text-xl" href={upiLink}>
           {decodedUPI}
         </a>
-        <p className="my-2">
-          Or, scan this QR code from your favourite UPI app to donate
-        </p>
+        <p className="my-2">{t("donateSection.qrCode")}</p>
         <div className=" p-2 h-56 w-56 mx-auto rounded">
           <svg
             viewBox="0 0 500 500"
@@ -101,9 +97,7 @@ const Donate = () => {
             </defs>
           </svg>
         </div>
-        <p>
-          If you wish to donate through a bank account, below are our details
-        </p>
+        <p>{t("donateSection.accountDetails")}</p>
         <div className="rounded my-2 ">
           <table className="min-w-full text-slate-800 rounded bg-slate-100 ">
             <tbody>

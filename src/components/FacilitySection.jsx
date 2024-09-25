@@ -1,12 +1,14 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const FacilitySection = () => {
+  const { t } = useTranslation();
   return (
     <section id="facility" className="bg-slate-100 p-4 md:p-5">
       <div className="container mx-auto  md:my-10 bg-white p-4 md:p-8 rounded text-center lg:max-w-[50vw]">
         <div className="flex items-center justify-center gap-2">
           <h3 className="text-lg md:text-2xl font-semibold text-center text-primary">
-            Cattle Breeds and Facility
+            {t("facilitySection.title")}
           </h3>
           <svg
             className="h-12 w-12 text-primary"
@@ -26,16 +28,12 @@ const FacilitySection = () => {
         </div>
 
         <p className="my-4 text-left md:leading-relaxed">
-          At our facility, we are dedicated to the care and preservation of
-          various esteemed cattle breeds from across India.
+          {t("facilitySection.description")}
         </p>
         <p className="my-4 text-left md:leading-relaxed">
-          Our infrastructure includes 160 well-maintained cow sheds, designed to
-          accommodate a total of 300 cattle. Each shed is equipped to provide a
-          comfortable and safe environment, ensuring that all our cattle receive
-          the best possible care and attention.
+          {t("facilitySection.description2")}
         </p>
-        <p>Some of the breeds we care for</p>
+        <p> {t("facilitySection.subtitle1")}</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
           <div className="bg-primaryDark p-2 m-2 rounded relative">
             <img
@@ -44,7 +42,7 @@ const FacilitySection = () => {
               alt="Deoni Cattle"
             />
             <p className="absolute bottom-0 left-0 right-0 text-center font-semibold text-xs text-black bg-white/50 p-1">
-              Maharashtra - Deoni Breed
+              {t("facilitySection.Deoni")}
             </p>
           </div>
           <div className="bg-primaryDark p-2 m-2 rounded relative">
@@ -54,7 +52,7 @@ const FacilitySection = () => {
               alt="Geer Cattle"
             />
             <p className="absolute bottom-0 left-0 right-0 text-center font-semibold text-xs text-black bg-white/50 p-1">
-              Gujarat - Geer Breed
+              {t("facilitySection.Geer")}
             </p>
           </div>
           <div className="bg-primaryDark p-2 m-2 rounded relative">
@@ -64,7 +62,7 @@ const FacilitySection = () => {
               alt="Kankrej Cattle"
             />
             <p className="absolute bottom-0 left-0 right-0 text-center font-semibold text-xs text-black bg-white/50 p-1">
-              Gujarat - Kankrej Breed
+              {t("facilitySection.Kankrej")}
             </p>
           </div>
           <div className="bg-primaryDark p-2 m-2 rounded relative">
@@ -74,7 +72,7 @@ const FacilitySection = () => {
               alt="Hallikar Cattle"
             />
             <p className="absolute bottom-0 left-0 right-0 text-center font-semibold text-xs text-black bg-white/50 p-1">
-              Karnataka - Hallikar Breed
+              {t("facilitySection.Hallikar")}
             </p>
           </div>
           <div className="bg-primaryDark p-2 m-2 rounded relative">
@@ -84,7 +82,7 @@ const FacilitySection = () => {
               alt="Khillari Cattle"
             />
             <p className="absolute bottom-0 left-0 right-0 text-center font-semibold text-xs text-black bg-white/50 p-1">
-              Maharashtra/Karnataka - Khillari Breed
+              {t("facilitySection.Khillari")}
             </p>
           </div>
           <div className="bg-primaryDark p-2 m-2 rounded relative">
@@ -94,11 +92,11 @@ const FacilitySection = () => {
               alt="Malnad Gidda Cattle"
             />
             <p className="absolute bottom-0 left-0 right-0 text-center font-semibold text-xs text-black bg-white/50 p-1">
-              Karnataka - Malnad Gidda Breed
+              {t("facilitySection.MalnadGidda")}
             </p>
           </div>
         </div>
-        <p className="mt-6">Our Facility</p>
+        <p className="mt-6">{t("facilitySection.subtitle2")}</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
           <div className="p-2 m-2 rounded relative overflow-clip shadow ">
             <img

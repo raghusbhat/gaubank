@@ -1,18 +1,25 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const AddressSection = () => {
+  const { t } = useTranslation();
   return (
     <section id="contact" className="bg-slate-100 p-4 md:p-5">
       <div className="container mx-auto flex flex-col md:flex-row md:my-10 bg-white p-4 md:p-8 rounded text-center lg:max-w-[50vw]">
         <div className="md:w-1/2 p-4">
-          <h2 className="text-xl font-semibold mb-4">Address</h2>
+          <h2 className="text-xl font-semibold mb-4">
+            {t("addressSection.title")}
+          </h2>
           <hr className="my-4" />
-          <p className="text-gray-700">Dharma Chakra ® </p>
+          <p className="text-gray-700"> {t("addressSection.description")} </p>
+          <p> {t("addressSection.description2")} </p>
+          <p> {t("addressSection.description3")} </p>
           <p>
-            Hosad Gou Bank Murooru, Kumata, Uttara Kannada District, Karnataka
-            581362.
+            Ph:&nbsp;&nbsp;
+            <a href="tel:8277542358" className="underline">
+              {t("addressSection.description4")}
+            </a>
           </p>
-          <p>Ph: 8277542358</p>
         </div>
         <div className="md:w-1/2">
           <iframe

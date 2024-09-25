@@ -8,28 +8,17 @@ const encodeEmail = (email) => {
 };
 
 const Footer = () => {
-  const email = encodeEmail("amruthadharahosad@gmail.com"); // Encode the email
-  const emailAddress = "amruthadharahosad@gmail.com"; // Original email for the link
+  const email = encodeEmail("amruthadharahosad@gmail.com");
+  const emailAddress = "amruthadharahosad@gmail.com";
   return (
     <footer className="bg-primaryDark text-white pt-8 pb-2 text-center">
       <a
-        className="underline py-8"
+        className="underline"
         href={`mailto:${emailAddress}`}
         dangerouslySetInnerHTML={{ __html: email }}
       />
-      <p className="text-xs">
-        © {new Date().getFullYear()} Dharma Chakra 111®. All rights reserved.
-      </p>
-      <p className="mt-2 text-xs italic opacity-60">
-        Developed & Maintained by{" "}
-        <a
-          className="underline"
-          href="https://www.perspectiv.in/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          www.persepctiv.in
-        </a>
+      <p className="text-xs text-gray-300">
+        © {new Date().getFullYear()} Dharma Chakra Trust ®. All rights reserved.
       </p>
     </footer>
   );

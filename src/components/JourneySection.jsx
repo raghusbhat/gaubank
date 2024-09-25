@@ -1,12 +1,15 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const JourneySection = () => {
+  const { t } = useTranslation();
+
   return (
-    <section id="journey" className="bg-primaryDark p-4 md:p-5">
+    <section id="programs" className="bg-primaryDark p-4 md:p-5">
       <div className="container mx-auto  md:my-10 bg-white p-4 md:p-8 rounded text-center lg:max-w-[50vw]">
         <div className="flex items-center justify-center gap-2">
           <h3 className="text-lg md:text-2xl font-semibold text-center text-primary">
-            Our Journey
+            {t("programsSection.title")}
           </h3>
 
           <svg
@@ -22,68 +25,55 @@ const JourneySection = () => {
           </svg>
         </div>
         <p className="my-4 text-left md:leading-relaxed">
-          This initiative was started on{" "}
-          <span className="font-bold italic">December 17, 2006,</span> by His
-          Holiness Shri Shri Raghaveshwara Bharati Mahaswamiji under the
-          "Kamadugha" project, aimed at protecting Indian cow breeds.
+          {t("programsSection.description")}
         </p>
         <p className="mb-4 text-left md:leading-relaxed">
-          It is part of the holistic mission of Shri Ramachandrapura Math to
-          highlight the benefits of protecting and conserving Desi cows (Bos
-          Indicus) for humanity, supported by historical evidence and
-          research-based outcomes.
+          {t("programsSection.description2")}
         </p>
-        <p className="my-4">The Gou-Bank undertakes several programs</p>
+        <p className="my-4"> {t("programsSection.description3")} </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="rounded p-4 bg-slate-100 text-left shadow">
-            <p className="font-semibold py-1">Species Continuation</p>
-            <hr className="py-1 opacity-80" />
-            <p className="py-1">
-              Promoting natural insemination to ensure the continuation of
-              Indian cow breeds.
+            <p className="font-semibold py-1">
+              {" "}
+              {t("programsSection.subtitle1")}{" "}
             </p>
+            <hr className="py-1 opacity-80" />
+            <p className="py-1">{t("programsSection.subtitle1Description")}</p>
           </div>
           <div className="rounded p-4 bg-slate-100 text-left shadow">
             <p className="font-semibold py-1">
-              Protection and Public Awareness
+              {t("programsSection.subtitle2")}
             </p>
             <hr className="py-1 opacity-80" />
-            <p className="py-1">
-              Conducting training and demonstration programs to raise public
-              awareness.
-            </p>
+            <p className="py-1">{t("programsSection.subtitle2Description")}</p>
           </div>
           <div className="rounded p-4 bg-slate-100 text-left shadow">
-            <p className="font-semibold py-1">Organic Farming</p>
-            <hr className="py-1 opacity-80" />
-            <p className="py-1">
-              Promote organic farming and supplying excellent quality organic
-              bio-fertilizer to farmers.
+            <p className="font-semibold py-1">
+              {t("programsSection.subtitle3")}
             </p>
+            <hr className="py-1 opacity-80" />
+            <p className="py-1">{t("programsSection.subtitle3Description")}</p>
           </div>
           <div className="rounded p-4 bg-slate-100 text-left shadow">
-            <p className="font-semibold py-1">By-Product Utilization</p>
-            <hr className="py-1 opacity-80" />
-            <p className="py-1">
-              Extracting essence from cow urine [gou arka], producing bio-gas
-              from cow dung, and cultivating green fodder.
+            <p className="font-semibold py-1">
+              {t("programsSection.subtitle4")}
             </p>
+            <hr className="py-1 opacity-80" />
+            <p className="py-1">{t("programsSection.subtitle4Description")}</p>
           </div>
           <div className="rounded p-4 bg-slate-100 text-left shadow">
-            <p className="font-semibold py-1">Community Engagement</p>
-            <hr className="py-1 opacity-80" />
-            <p className="py-1">
-              Encouraging every household to maintain cows and popularizing
-              organic agriculture.
+            <p className="font-semibold py-1">
+              {t("programsSection.subtitle5")}
             </p>
+            <hr className="py-1 opacity-80" />
+            <p className="py-1">{t("programsSection.subtitle5Description")}</p>
           </div>
           <div className="rounded p-4 bg-slate-100 text-left shadow">
-            <p className="font-semibold py-1">Visitor Encouragement</p>
-            <hr className="py-1 opacity-80" />
-            <p className="py-1">
-              Inviting patrons to visit the premises to learn more about our
-              initiatives and witness the impact firsthand.
+            <p className="font-semibold py-1">
+              {t("programsSection.subtitle6")}
             </p>
+            <hr className="py-1 opacity-80" />
+            <p className="py-1">{t("programsSection.subtitle6Description")}</p>
           </div>
         </div>
       </div>

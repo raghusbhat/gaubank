@@ -9,3 +9,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
 }
+
+html[lang="kn"] body {
+  font-family: "Anek Kannada", sans-serif;
+}
