@@ -12,18 +12,20 @@ const Navbar = () => {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-    setIsOpen(false); // Close mobile menu if open
+    setIsOpen(false); 
   };
 
   return (
     <nav className="bg-primary p-2 fixed top-0 left-0 w-full z-50 shadow shadow-black/20">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="flex items-center">
-          <img src={logo} alt="logo" className="w-10 h-10 mr-2" />
-          <span className="text-white text-lg font-semibold">
-            {i18n.t("navbar.name")}
-          </span>
-        </div>
+        <a href="#hero">
+          <div className="flex items-center">
+            <img src={logo} alt="logo" className="w-10 h-10 mr-2" />
+            <span className="text-white text-lg font-semibold">
+              {i18n.t("navbar.name")}
+            </span>
+          </div>
+        </a>
         {/* Menu Items */}
         <div className="hidden md:flex space-x-6 items-center">
           <a
