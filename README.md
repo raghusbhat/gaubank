@@ -1,4 +1,4 @@
-# Gau Bank Website
+# Bharatiya Gou Bank Website
 Vite React
 
 ## Setup
